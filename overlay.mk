@@ -1,7 +1,6 @@
 PRODUCT_PACKAGES += \
     # product overlay
 	AospFrameworkResOverlay \
-	CarrierConfigResCommon_Sys \
 	DevicesAndroidOverlay \
 	DevicesOverlay \
 	FrameworksResCommon_Sys \
