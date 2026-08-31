@@ -70,14 +70,14 @@
         <item>500</item>
     </integer-array>
     <integer-array name="config_dynamicHysteresisDarkLevels">
+        <item>1</item>
+        <item>3</item>
+        <item>10</item>
+        <item>40</item>
+        <item>80</item>
+        <item>300</item>
         <item>800</item>
-        <item>800</item>
-        <item>800</item>
-        <item>800</item>
-        <item>800</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
+        <item>2000</item>
     </integer-array>
     <integer-array name="config_dynamicHysteresisLuxLevels">
         <item>2</item>
