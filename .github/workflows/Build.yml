@@ -32,4 +32,4 @@ jobs:
           product/overlay/*.apk
           vendor/overlay/*.apk
           META-INF/*
-        name: Overlays
+        name: Overlays-HyperOS-chime
