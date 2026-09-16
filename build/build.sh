@@ -108,10 +108,10 @@ echo "$makes" | while read -r f; do
 
     path="$(dirname "$f")"
     
-    if build_with_aapt "$name" "$path"; then
-        echo "Successfully built with aapt"
-    elif command -v aapt2 > /dev/null && build_with_aapt2 "$name" "$path"; then
+    if command -v aapt2 > /dev/null && build_with_aapt2 "$name" "$path"; then
         echo "Successfully built with aapt2"
+    elif build_with_aapt "$name" "$path"; then
+        echo "Successfully built with aapt"
     else
         echo "Failed to build $name with both aapt and aapt2"
         exit 1
