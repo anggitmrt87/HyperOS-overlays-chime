@@ -1,8 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.miui.systemui.overlay.devices.android"
     android:versionCode="36"
-    android:versionName="16"
-    coreApp="true">
+    android:versionName="16">
 
     <uses-sdk
         android:minSdkVersion="30"
@@ -16,5 +15,5 @@
     <application
         android:label="DevicesAndroidOverlay"
         android:hasCode="false"
-        android:extractNativeLibs="true" />
+        android:extractNativeLibs="false" />
 </manifest>
