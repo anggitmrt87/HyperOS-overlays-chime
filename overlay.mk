@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
 	MRTthemeOverlay \
 	SettingsRroDeviceTypeOverlay \
 	MiuiCameraOverlay \
-	MiuiCameraOverlayAosp \
+	MiuiCameraOverlayAosp
 	
 	# vendor overlay
 	FrameworksResTarget \

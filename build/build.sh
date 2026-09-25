@@ -80,7 +80,7 @@ build_with_aapt() {
     mkdir -p "$temp_android_data"
     export ANDROID_DATA="$temp_android_data"
     
-    aapt package -f -F "${name}-unsigned.apk" -M "$path/AndroidManifest.xml" -S "$path/res" -I android.jar
+    aapt package -f --auto-add-overlay -F "${name}-unsigned.apk" -M "$path/AndroidManifest.xml" -S "$path/res" -I android.jar
     local ret=$?
     
     rm -rf "$temp_android_data"
@@ -99,13 +99,19 @@ build_with_aapt2() {
         echo "No resources compiled for $name"
         return 1
     fi
-    aapt2 link -o "${name}-unsigned.apk" -I android.jar --manifest "$path/AndroidManifest.xml" $flat_files || return 1
+    aapt2 link --auto-add-overlay -o "${name}-unsigned.apk" -I android.jar --manifest "$path/AndroidManifest.xml" $flat_files || return 1
 }
 
 echo "$makes" | while read -r f; do
-    name="$(sed -nE 's/LOCAL_PACKAGE_NAME.*:\=\s*(.*)/\1/p' "$f")"
-    echo "Generating $name"
+    # PERBAIKAN: Mengambil hanya 1 baris pertama dan mencocokkan dengan tepat
+    name="$(sed -nE 's/^LOCAL_(PACKAGE_NAME|MODULE)[ \t]*:=[ \t]*([^ \t]+).*/\2/p' "$f" | head -n 1)"
+    
+    if [ -z "$name" ]; then
+        echo "Error: Gagal menemukan nama module di $f. Melewati file ini."
+        continue
+    fi
 
+    echo "Generating $name"
     path="$(dirname "$f")"
     
     if command -v aapt2 > /dev/null && build_with_aapt2 "$name" "$path"; then

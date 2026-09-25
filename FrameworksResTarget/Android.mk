@@ -1,8 +1,11 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
+LOCAL_MODULE := FrameworksResTarget
 LOCAL_MODULE_TAGS := optional
-LOCAL_PACKAGE_NAME := FrameworksResTarget
+LOCAL_SRC_FILES := FrameworksResTarget.apk
+LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
 LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 LOCAL_PRIVATE_PLATFORM_APIS := true
-include $(BUILD_PACKAGE)
+LOCAL_CERTIFICATE := platform
+include $(BUILD_PREBUILT)
