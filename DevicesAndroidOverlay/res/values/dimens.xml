@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="config_wallpaperMaxScale">1.2</dimen>
+    <item type="dimen" name="config_wallpaperMaxScale">1.2</item>
     <dimen name="notification_min_height">106.0dip</dimen>
     <dimen name="rounded_corner_radius">100.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">100.0px</dimen>

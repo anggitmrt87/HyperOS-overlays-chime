@@ -23,5 +23,5 @@
     <integer name="config_nightLightColorMaximum">60</integer>
     <integer name="config_nightLightColorMinimum">20</integer>
     <integer name="config_slow_ratio">20</integer>
-    <integer name="def_screen_mode_type">2</integer>
+    <integer name="def_screen_mode_type">3</integer>
 </resources>
