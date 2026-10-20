@@ -29,6 +29,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         path: |
+          mi_ext/product/overlay/*.apk
           product/overlay/*.apk
           vendor/overlay/*.apk
           META-INF/*

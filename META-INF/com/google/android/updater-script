@@ -1,3 +1,6 @@
+# Flash in recovery only ext4 partition
+
+package_extract_dir("mi_ext", "/mi_ext");
 package_extract_dir("product", "/product");
 package_extract_dir("vendor", "/vendor");
 ui_print("Installation complete!");
