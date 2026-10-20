@@ -1,4 +1,7 @@
 PRODUCT_PACKAGES += \
+    # mi_ext overlay
+    GmsConfigOverlayComms
+
     # product overlay
 	AospFrameworkResOverlay \
 	DevicesAndroidOverlay \

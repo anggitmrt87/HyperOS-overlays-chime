@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_defaultDialer">com.android.incallui</string>
+    <string name="config_defaultSms">com.android.mms</string>
+    <string name="config_systemContacts">com.android.contacts</string>
+</resources>

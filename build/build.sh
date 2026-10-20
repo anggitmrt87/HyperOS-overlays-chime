@@ -35,6 +35,7 @@ cd "$script_dir"
 root_dir="$(cd "$script_dir/.." && pwd)"
 overlay_mk="$root_dir/overlay.mk"
 
+declare -a mi_ext_packages
 declare -a product_packages
 declare -a vendor_packages
 
@@ -45,7 +46,10 @@ if [ -f "$overlay_mk" ]; then
         line="$(echo "$line" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
         [[ -z "$line" ]] && continue
 
-        if [[ "$line" == "# product overlay" ]]; then
+        if [[ "$line" == "# mi_ext overlay" ]]; then
+            current_section="mi_ext"
+            continue
+        elif [[ "$line" == "# product overlay" ]]; then
             current_section="product"
             continue
         elif [[ "$line" == "# vendor overlay" ]]; then
@@ -55,7 +59,9 @@ if [ -f "$overlay_mk" ]; then
 
         [[ "$line" == \#* ]] && continue
 
-        if [[ "$current_section" == "product" ]]; then
+        if [[ "$current_section" == "mi_ext" ]]; then
+            mi_ext_packages+=("$line")
+        elif [[ "$current_section" == "product" ]]; then
             product_packages+=("$line")
         elif [[ "$current_section" == "vendor" ]]; then
             vendor_packages+=("$line")
@@ -127,7 +133,9 @@ echo "$makes" | while read -r f; do
     rm -f "${name}-unsigned.apk"
 
     if [ -f "$overlay_mk" ]; then
-        if contains "$name" "${product_packages[@]}"; then
+        if contains "$name" "${mi_ext_packages[@]}"; then
+            target_dir="$root_dir/mi_ext/product/overlay"
+        elif contains "$name" "${product_packages[@]}"; then
             target_dir="$root_dir/product/overlay"
         elif contains "$name" "${vendor_packages[@]}"; then
             target_dir="$root_dir/vendor/overlay"
