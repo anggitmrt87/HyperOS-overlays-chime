@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="config_call_recording">true</bool>
+    <bool name="config_5g_connection_in_dsds_mode">false</bool>
+    <bool name="config_disable_5g_by_default">true</bool>
     
     <!-- Flag indicating if hac is enabled -->
     <bool name="hac_enabled">true</bool>
