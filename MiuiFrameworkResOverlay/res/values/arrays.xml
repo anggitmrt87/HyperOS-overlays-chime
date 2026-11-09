@@ -18,23 +18,23 @@
         <item>0</item>
     </integer-array>
     <integer-array name="config_hbm_backlight_levels">
-        <item>0</item>
+        <item>1</item>
+        <item>16</item>
+        <item>32</item>
+        <item>48</item>
+        <item>64</item>
+        <item>80</item>
+        <item>96</item>
+        <item>111</item>
+        <item>127</item>
+        <item>143</item>
+        <item>159</item>
+        <item>175</item>
+        <item>191</item>
+        <item>207</item>
+        <item>223</item>
+        <item>239</item>
         <item>255</item>
-        <item>511</item>
-        <item>767</item>
-        <item>1023</item>
-        <item>1279</item>
-        <item>1535</item>
-        <item>1791</item>
-        <item>2047</item>
-        <item>2303</item>
-        <item>2559</item>
-        <item>2815</item>
-        <item>3071</item>
-        <item>3327</item>
-        <item>3583</item>
-        <item>3839</item>
-        <item>4095</item>
     </integer-array>
     <integer-array name="config_hbm_lux_levels">
         <item>6000</item>
@@ -75,18 +75,18 @@
         <item>500</item>
     </integer-array>
     <integer-array name="config_hightGrayBrightnessLevels">
-        <item>150</item>
-        <item>500</item>
-        <item>1200</item>
-        <item>1500</item>
-        <item>4095</item>
+        <item>9</item>
+        <item>31</item>
+        <item>75</item>
+        <item>93</item>
+        <item>255</item>
     </integer-array>
     <integer-array name="config_lowGrayBrightnessLevels">
-        <item>100</item>
-        <item>150</item>
-        <item>700</item>
-        <item>800</item>
-        <item>4095</item>
+        <item>6</item>
+        <item>9</item>
+        <item>44</item>
+        <item>50</item>
+        <item>255</item>
     </integer-array>
     <integer-array name="config_touch_cover_protection_rect">
         <item>0</item>

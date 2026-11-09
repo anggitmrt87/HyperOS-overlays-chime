@@ -7,12 +7,12 @@
     <integer name="config_brightness_ramp_rate_slow">1973</integer>
     <integer name="config_pinnerWebviewPinBytes">0</integer>
     <integer name="config_safe_media_volume_usb_mB">-2500</integer>
-    <integer name="config_screenBrightnessDim">50</integer>
-    <integer name="config_screenBrightnessDim_hyper">50</integer>
-    <integer name="config_screenBrightnessSettingDefault">1200</integer>
-    <integer name="config_screenBrightnessSettingDefault_hyper">1200</integer>
-    <integer name="config_screenBrightnessSettingMaximum">4095</integer>
-    <integer name="config_screenBrightnessSettingMaximum_hyper">4095</integer>
-    <integer name="config_screenBrightnessSettingMinimum">50</integer>
-    <integer name="config_screenBrightnessSettingMinimum_hyper">50</integer>
+    <integer name="config_screenBrightnessDim">3</integer>
+    <integer name="config_screenBrightnessDim_hyper">3</integer>
+    <integer name="config_screenBrightnessSettingDefault">75</integer>
+    <integer name="config_screenBrightnessSettingDefault_hyper">75</integer>
+    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessSettingMaximum_hyper">255</integer>
+    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <integer name="config_screenBrightnessSettingMinimum_hyper">1</integer>
 </resources>
