@@ -4,5 +4,5 @@
     <integer name="config_defaultRefreshRate">0</integer>
     <integer name="config_default_cellular_usage_setting">-1</integer>
     <integer name="config_multiuserMaximumUsers">4</integer>
-    <integer name="config_screenBrightnessDoze">1</integer>
+    <integer name="config_screenBrightnessDoze">20</integer>
 </resources>
