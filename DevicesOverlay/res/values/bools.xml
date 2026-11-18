@@ -10,7 +10,7 @@
     <bool name="support_aod_linkage_anim">true</bool>
     <bool name="support_hyperos_device_controls_feature">true</bool>
     <bool name="config_extra_battery_saver_confirmation">true</bool>
-    <bool name="config_volumeDialogUseBackgroundBlur">true</bool>
+    <bool name="config_volumeDialogUseBackgroundBlur">false</bool>
     <bool name="doze_display_state_supported">false</bool>
     <bool name="support_round_corner">false</bool>
 </resources>
