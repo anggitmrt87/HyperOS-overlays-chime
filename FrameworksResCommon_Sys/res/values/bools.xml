@@ -25,8 +25,8 @@
     <bool name="config_stkNoAlphaUsrCnf">false</bool>
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
-    <bool name="config_telephony5gNonStandalone">false</bool>
-    <bool name="config_telephony5gStandalone">false</bool>
+    <bool name="config_telephony5gNonStandalone">true</bool>
+    <bool name="config_telephony5gStandalone">true</bool>
     <bool name="config_unplugTurnsOnScreen">true</bool>
     <bool name="config_voice_data_sms_auto_fallback">true</bool>
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
