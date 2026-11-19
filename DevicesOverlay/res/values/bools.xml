@@ -6,7 +6,7 @@
     <bool name="flag_charging_ripple">true</bool>
     <bool name="force_shade_low_end_anim">true</bool>
     <bool name="shade_header_gradient_blur">true</bool>
-    <bool name="shade_screenshot_blur">true</bool>
+    <bool name="shade_screenshot_blur">false</bool>
     <bool name="support_aod_linkage_anim">true</bool>
     <bool name="support_hyperos_device_controls_feature">true</bool>
     <bool name="config_extra_battery_saver_confirmation">true</bool>
